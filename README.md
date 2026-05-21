@@ -2,16 +2,17 @@
  
 > *Deploy autonomous drones that explore the world and reveal your map — so you don't have to.*
  
-[![Minecraft](https://img.shields.io/badge/Minecraft-26.1.x-brightgreen)](https://minecraft.net)
+[![Minecraft](https://img.shields.io/badge/Minecraft-26.1.2-brightgreen)](https://minecraft.net)
 [![Loader](https://img.shields.io/badge/Loader-Fabric-blue)](https://fabricmc.net)
 [![Java](https://img.shields.io/badge/Java-25-orange)](https://adoptium.net)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
 [![Modrinth](https://img.shields.io/badge/Modrinth-cartographer--drones-green)](https://modrinth.com/mod/cartographer-drones)
 [![CurseForge](https://img.shields.io/badge/CurseForge-cartographer--drones-orange)](https://curseforge.com/minecraft/mc-mods/cartographer-drones)
+[![Build](https://github.com/jwhicks727/cartographer-drones/actions/workflows/build.yml/badge.svg)](https://github.com/jwhicks727/cartographer-drones/actions/workflows/build.yml)
  
 ---
  
-Cartographer Drones is a Fabric mod for Minecraft 26.1.x that adds autonomous explorer drones. Launch a drone from your Launch Station, set a mission, and watch your map fill in organically as the drone moves through the world — loading chunks and triggering your map mod in real time, exactly as if a second player were exploring for you.
+Cartographer Drones is a Fabric mod for Minecraft 26.1.2 that adds autonomous explorer drones. Launch a drone from your Launch Station, set a mission, and watch your map fill in organically as the drone moves through the world — loading chunks and triggering your map mod in real time, exactly as if a second player were exploring for you.
  
 ---
  
@@ -37,10 +38,10 @@ A structured mission UI evolving into a natural language command system. Tell yo
  
 | Dependency | Version | Required? |
 |---|---|---|
-| Fabric API | Latest for 26.1.x | ✅ Required |
-| JourneyMap | 26.1.x-latest |  ⚠️ Soft (map reveal disabled without it) |
-| Cloth Config | Latest for 26.1.x | ✅ Required (configuration screen) |
-| Mod Menu | Latest for 26.1.x | ✅ Required (in-game settings UI) |
+| Fabric API | Latest for 26.1.2 | ✅ Required |
+| JourneyMap | 26.1.2-latest |  ⚠️ Soft (map reveal disabled without it) |
+| Cloth Config | Latest for 26.1.2 | ✅ Required (configuration screen) |
+| Mod Menu | Latest for 26.1.2 | ✅ Required (in-game settings UI) |
  
 > **Modpack builders:** Cartographer Drones works without JourneyMap, but the core map-reveal mechanic requires it. Xaero's Minimap compatibility is planned for a future release.
 >
