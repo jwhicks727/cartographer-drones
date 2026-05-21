@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "cartographer_drones",
+	"version": "${version}",
+	"name": "Cartographer Drones",
+	"description": "Deploy autonomous drones that explore the world and reveal your map while you do something else.",
+	"authors": [
+    "jwhicks727"
+	],
+	"contact": {
+    "homepage": "https://github.com/jwhicks727/cartographer-drones",
+    "sources": "https://github.com/jwhicks727/cartographer-drones",
+    "issues": "https://github.com/jwhicks727/cartographer-drones/issues",
+	"discord": "https://discord.gg/rKQ5NJ7W8b"
+	},
+	"license": "MIT",
+	"icon": "assets/cartographer-drones/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.jwhicks727.cartographer_drones.CartographerDrones"
+		]
+	},
+	"mixins": [
+		"cartographer-drones.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
