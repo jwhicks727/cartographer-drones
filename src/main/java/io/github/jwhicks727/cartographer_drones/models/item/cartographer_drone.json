@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:model",
+    "model": {
+        "type": "minecraft:builtin/entity",
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "item/generated",
+            "textures": {
+                "layer0": "cartographer_drones:item/cartographer_drone"
+            }
+        }
+    }
+}
