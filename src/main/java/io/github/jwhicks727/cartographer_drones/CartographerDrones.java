@@ -5,8 +5,12 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import io.github.jwhicks727.cartographer_drones.registry.ModBlockEntities;
+import io.github.jwhicks727.cartographer_drones.registry.ModBlocks;
 import io.github.jwhicks727.cartographer_drones.registry.ModEntities;
 import io.github.jwhicks727.cartographer_drones.registry.ModItems;
+import io.github.jwhicks727.cartographer_drones.registry.ModBlocks;
+import io.github.jwhicks727.cartographer_drones.registry.ModBlockEntities;
 
 public class CartographerDrones implements ModInitializer {
 	public static final String MOD_ID = "cartographer_drones";
@@ -24,6 +28,8 @@ public class CartographerDrones implements ModInitializer {
 		ModEntities.register();
 		ModItems.register();
 		CartographerDrones.LOGGER.info("Cartographer Drones initialized.");
+		ModBlocks.register();
+		ModBlockEntities.register();
 		LOGGER.info("Cartographer Drones initialized.");
 	}
 }
