@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "cartographer_drones:block/ornithopter_station" },
+        "facing=south": { "model": "cartographer_drones:block/ornithopter_station", "y": 180 },
+        "facing=west": { "model": "cartographer_drones:block/ornithopter_station", "y": 270 },
+        "facing=east": { "model": "cartographer_drones:block/ornithopter_station", "y": 90 }
+    }
+}

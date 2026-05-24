@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/orientable_with_bottom",
+    "textures": {
+        "top": "cartographer_drones:block/ornithopter_station_top",
+        "bottom": "cartographer_drones:block/ornithopter_station_bottom",
+        "front": "cartographer_drones:block/ornithopter_station_front",
+        "side": "cartographer_drones:block/ornithopter_station_side"
+    }
+}
