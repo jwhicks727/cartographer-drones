@@ -6,12 +6,12 @@
         "ICI"
     ],
     "key": {
-        "S": {"item": "minecraft:string"},
-        "I": {"item": "minecraft:iron_ingot"},
-        "C": {"item": "minecraft:compass"}
+        "S": "minecraft:string",
+        "I": "minecraft:iron_ingot",
+        "C": "minecraft:compass"
     },
     "result": {
-        "id": "cartographer_drones:cartographer_drone",
+        "id": "cartographer_drones:ornithopter_drone",
         "count": 1
     }
 }

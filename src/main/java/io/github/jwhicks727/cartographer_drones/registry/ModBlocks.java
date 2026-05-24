@@ -17,12 +17,15 @@ public class ModBlocks {
     // The Ornithopter Station — Tier 1 fixed launch block
     // Strength 3.5 (harder than wood, softer than iron), metal sound, non-opaque for model rendering
     public static final LaunchStationBlock ORNITHOPTER_STATION = register(
-        "ornithopter_station",
-        new LaunchStationBlock(BlockBehaviour.Properties.of()
-            .strength(3.5f)
-            .sound(SoundType.WOOD) // Wood sound fits Tier 1 ornithopter aesthetic
-            .noOcclusion())
-    );
+    "ornithopter_station",
+    new LaunchStationBlock(BlockBehaviour.Properties.of()
+        .strength(3.5f)
+        .sound(SoundType.WOOD)
+        .noOcclusion()
+        .setId(ResourceKey.create(
+            BuiltInRegistries.BLOCK.key(),
+            Identifier.fromNamespaceAndPath(CartographerDrones.MOD_ID, "ornithopter_station"))))
+);
 
     // Generic registration helper — registers block to the game registry and returns it
     private static <T extends Block> T register(String name, T block) {

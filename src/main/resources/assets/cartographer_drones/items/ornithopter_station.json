@@ -1,0 +1,6 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "cartographer_drones:block/ornithopter_station"
+    }
+}
