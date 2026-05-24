@@ -12,14 +12,19 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class ModBlocks {
 
-    public static final LaunchStationBlock LAUNCH_STATION = register(
-        "launch_station",
+    // --- Tier 1: Ornithopter ---
+
+    // The Ornithopter Station — Tier 1 fixed launch block
+    // Strength 3.5 (harder than wood, softer than iron), metal sound, non-opaque for model rendering
+    public static final LaunchStationBlock ORNITHOPTER_STATION = register(
+        "ornithopter_station",
         new LaunchStationBlock(BlockBehaviour.Properties.of()
             .strength(3.5f)
-            .sound(SoundType.METAL)
+            .sound(SoundType.WOOD) // Wood sound fits Tier 1 ornithopter aesthetic
             .noOcclusion())
     );
 
+    // Generic registration helper — registers block to the game registry and returns it
     private static <T extends Block> T register(String name, T block) {
         ResourceKey<Block> key = ResourceKey.create(
             BuiltInRegistries.BLOCK.key(),
@@ -29,6 +34,7 @@ public class ModBlocks {
         return block;
     }
 
+    // Called from CartographerDrones.onInitialize() to trigger static field registration
     public static void register() {
         CartographerDrones.LOGGER.info("Registering Cartographer Drones blocks.");
     }

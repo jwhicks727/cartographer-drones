@@ -11,18 +11,22 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 
 public class ModBlockEntities {
 
-    public static final BlockEntityType<LaunchStationBlockEntity> LAUNCH_STATION =
+    // --- Tier 1: Ornithopter ---
+
+    // BlockEntity type for the Ornithopter Station — handles GUI, state, and drone slot
+    public static final BlockEntityType<LaunchStationBlockEntity> ORNITHOPTER_STATION =
         Registry.register(
             BuiltInRegistries.BLOCK_ENTITY_TYPE,
             ResourceKey.create(
                 BuiltInRegistries.BLOCK_ENTITY_TYPE.key(),
-                Identifier.fromNamespaceAndPath(CartographerDrones.MOD_ID, "launch_station")
+                Identifier.fromNamespaceAndPath(CartographerDrones.MOD_ID, "ornithopter_station")
             ),
             FabricBlockEntityTypeBuilder.create(LaunchStationBlockEntity::new,
-                ModBlocks.LAUNCH_STATION)
+                ModBlocks.ORNITHOPTER_STATION)
                 .build()
         );
 
+    // Called from CartographerDrones.onInitialize() to trigger static field registration
     public static void register() {
         CartographerDrones.LOGGER.info("Registering Cartographer Drones block entities.");
     }

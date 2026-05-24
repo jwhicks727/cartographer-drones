@@ -27,7 +27,7 @@ public class LaunchStationBlockEntity extends BlockEntity implements MenuProvide
     public final SimpleContainer inventory = new SimpleContainer(1);
 
     public LaunchStationBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.LAUNCH_STATION, pos, state);
+        super(ModBlockEntities.ORNITHOPTER_STATION, pos, state);
     }
 
     public StationState getStationState() {
