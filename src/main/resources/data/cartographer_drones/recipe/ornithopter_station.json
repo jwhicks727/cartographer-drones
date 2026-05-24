@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "WWW",
+        "CAS",
+        "PPP"
+    ],
+    "key": {
+        "P": "#minecraft:planks",
+        "C": "minecraft:copper_ingot",
+        "A": "minecraft:amethyst_shard",
+        "S": "minecraft:string",
+        "W": "#minecraft:wool"
+    },
+    "result": {
+        "id": "cartographer_drones:ornithopter_station",
+        "count": 1
+    }
+}
